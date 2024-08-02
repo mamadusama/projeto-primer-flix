@@ -10,6 +10,7 @@ import Banner from "../../Components/Banner"
 
 const Home = () => {
     const [filmes, setFilmes] = useState([]);
+    const[loding , setLoading] = useState(true);
 
     useEffect(() => {
         async function loadFilmes(){
@@ -20,12 +21,21 @@ const Home = () => {
                 page: 1,
               },
             });
-            console.log(response.data);
+        
            setFilmes(response.data.results);
+           setLoading(false);
         }
         loadFilmes();
        
     }, [])
+
+    if(loding){
+      return(
+        <div className="loading">
+          <h1>Carregando Filmes...</h1>
+        </div>
+      );
+    }
 
     return (
       <>

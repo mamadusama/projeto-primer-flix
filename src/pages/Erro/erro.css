@@ -1,0 +1,28 @@
+.erro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    background-color: #ffffff;
+}
+
+.ero-404{
+    font-size: 100px;
+    color: #912020;
+}
+.links-to-home{
+    margin-top: 20px;
+}
+.links-to-home a{
+    text-decoration: none;
+    color: #e6e3e3;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #242058;
+    padding: 10px;
+}
