@@ -117,5 +117,5 @@ Se você gostaria de contribuir para o projeto Prime Flix, siga as etapas abaixo
     ```
 7. Abra um pull request no repositório original.
 
-Agradecemos antecipadamente por sua contribuição para o projeto Prime Flix! Sua ajuda é muito bem-vinda.
+Agradeço antecipadamente por sua contribuição para o projeto Prime Flix! Sua ajuda é muito bem-vinda.
 
