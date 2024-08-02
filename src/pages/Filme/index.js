@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 import "./filmes.css"
 import api from "../../services/api";
@@ -27,7 +28,7 @@ const Filme = () => {
             setLoading(false);
         })
         .catch((erro)=>{
-            console.log("Erro: Não foi possivel carregar os dados do filme");
+            toast.warn("ops! parece que algo deu errado")
             navigate("/", {replace: true});
             return;
         })
@@ -46,13 +47,15 @@ const Filme = () => {
         const hasFilme = filmesSalvos.some((filmeSalvo)=> filmeSalvo.id === filme.id);
   
         if(hasFilme){
-            alert("Você já possui esse filme salvo");
+          toast.warn("Este filme já está na sua lista");
+            
             return;
         }
   
         filmesSalvos.push(filme);
         localStorage.setItem("filmes", JSON.stringify(filmesSalvos));
-        alert("Filme salvo com sucesso");
+        toast.success("Filme salvo com sucesso");
+        
    }
 
     if(loading){

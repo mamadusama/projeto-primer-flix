@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Prime Flix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prime Flix é uma aplicação web para visualizar e gerenciar filmes favoritos, utilizando a API do The Movie Database (TMDb).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Visualizar filmes em exibição.
+- Visualizar detalhes de um filme específico.
+- Adicionar filmes aos favoritos.
+- Remover filmes dos favoritos.
+- Exibir filmes populares em um banner.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalação
 
-### `npm test`
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/prime-flix.git
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Acesse o diretório do projeto:
+    ```bash
+    cd prime-flix
+    ```
 
-### `npm run build`
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Abra o navegador e acesse http://localhost:3000.
 
-### `npm run eject`
+# A estrutura do projeto Prime Flix é organizada da seguinte forma:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+├── src
+│   ├── components
+│   │   ├── MovieCard.js
+│   │   ├── MovieDetails.js
+│   │   ├── MovieList.js
+│   │   └── Banner.js
+│   ├── pages
+│   │   ├── Home.js
+│   │   └── Favorites.js
+│   ├── services
+│   │   └── api.js
+│   ├── App.js
+│   ├── index.js
+│   └── styles.css
+├── public
+│   ├── index.html
+│   └── logo.png
+├── package.json
+└── README.md
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Explicação da estrutura:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- A pasta `src` contém todo o código-fonte da aplicação.
+- A pasta `components` contém os componentes reutilizáveis da aplicação, como `MovieCard`, `MovieDetails`, `MovieList` e `Banner`.
+- A pasta `pages` contém as páginas da aplicação, como `Home` e `Favorites`.
+- A pasta `services` contém os serviços de comunicação com a API, como `api.js`.
+- O arquivo `App.js` é o ponto de entrada da aplicação.
+- O arquivo `index.js` é responsável por renderizar a aplicação no navegador.
+- O arquivo `styles.css` contém os estilos CSS da aplicação.
+- A pasta `public` contém arquivos estáticos, como o `index.html` e o `logo.png`.
+- O arquivo `package.json` contém as dependências e scripts do projeto.
+- O arquivo `README.md` é o arquivo de documentação do projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Essa estrutura organizada facilita a manutenção e o desenvolvimento da aplicação Prime Flix.
 
-## Learn More
+## Tecnologias Utilizadas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A aplicação Prime Flix utiliza as seguintes tecnologias:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React: uma biblioteca JavaScript para construção de interfaces de usuário.
+- The Movie Database (TMDb) API: uma API que fornece informações sobre filmes, como detalhes, imagens e avaliações.
+- Axios: uma biblioteca JavaScript para fazer requisições HTTP.
+- React Toastify: uma biblioteca JavaScript para exibir notificações de forma elegante.
 
-### Code Splitting
+Essas tecnologias foram escolhidas por sua popularidade, facilidade de uso e suporte ativo pela comunidade de desenvolvedores. Elas permitem criar uma aplicação web moderna e responsiva, com uma ótima experiência de usuário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Toastify
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Essas tecnologias foram escolhidas por sua popularidade, facilidade de uso e suporte ativo pela comunidade de desenvolvedores. Elas permitem criar uma aplicação web moderna e responsiva, com uma ótima experiência de usuário.
 
-### Making a Progressive Web App
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Se você gostaria de contribuir para o projeto Prime Flix, siga as etapas abaixo:
 
-### Advanced Configuration
+1. Faça um fork do repositório.
+2. Clone o seu fork para o seu ambiente local:
+    ```bash
+    git clone https://github.com/mamadusama/prime-flix.git
+    ```
+3. Crie uma nova branch para a sua contribuição:
+    ```bash
+    git checkout -b minha-contribuicao
+    ```
+4. Faça as alterações desejadas no código.
+5. Commit suas alterações:
+    ```bash
+    git commit -m "Minha contribuição"
+    ```
+6. Envie as alterações para o seu fork:
+    ```bash
+    git push origin minha-contribuicao
+    ```
+7. Abra um pull request no repositório original.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Agradecemos antecipadamente por sua contribuição para o projeto Prime Flix! Sua ajuda é muito bem-vinda.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
