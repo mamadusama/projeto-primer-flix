@@ -16,7 +16,7 @@ Prime Flix é uma aplicação web para visualizar e gerenciar filmes favoritos, 
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/prime-flix.git
+    git clone https://github.com/mamadusama/prime-flix.git
     ```
 
 2. Acesse o diretório do projeto:
