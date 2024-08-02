@@ -1,0 +1,42 @@
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.slideshow img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 10;
+  animation: slide 10s ease-in-out reverse infinite;
+  object-fit: cover;
+}
+
+
+
+.slideshow a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+ 
+}
