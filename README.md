@@ -40,26 +40,43 @@ Prime Flix é uma aplicação web para visualizar e gerenciar filmes favoritos, 
 
 # A estrutura do projeto Prime Flix é organizada da seguinte forma:
 
-```
 ├── src
+
 │   ├── components
-│   │   ├── MovieCard.js
-│   │   ├── MovieDetails.js
-│   │   ├── MovieList.js
-│   │   └── Banner.js
+
+│   │   ├── Header/index.js
+
+│   │   └── Banner/index.js.js
+
 │   ├── pages
-│   │   ├── Home.js
-│   │   └── Favorites.js
+
+│   │   ├── Home/index.js.js
+
+│   │   └── Favoritos/index.js
+
+          └── Erro/index.js
+
+          └── Filme/index.js
 │   ├── services
+
 │   │   └── api.js
+
 │   ├── App.js
+
 │   ├── index.js
+
 │   └── styles.css
+
 ├── public
+
 │   ├── index.html
+
 │   └── logo.png
+
 ├── package.json
+
 └── README.md
+
 ```
 
 Explicação da estrutura:
